@@ -27,7 +27,7 @@ var ifChainThreshold = flag.Int("c", 2, "if/else chain length threshold")
 var ifBodyThreshold = flag.Int("f", 20, "if body statement count threshold")
 var skipBoolParamCheck = flag.Bool("b", false, "don't warn on bool function params")
 var outputJSON = flag.Bool("j", false, "output results as json")
-var ignoreTestFiles = flag.Bool("i", true, "ignore test files")
+var ignoreTestFiles = flag.Bool("i", false, "ignore test files")
 var outputSummary = flag.Bool("sum", false, "output summary")
 
 // Parser parses go source files, looking for potentially complex
