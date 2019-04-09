@@ -1,13 +1,6 @@
-// Copyright 2011 Numrotron Inc.
-// Use of this source code is governed by an MIT-style license
-// that can be found in the LICENSE file.
-//
-// Developed at www.stathat.com by Patrick Crosby
-// Contact us on twitter with any questions:  twitter.com/stat_hat
-
 // splint is a little Go application to analyze Go source files.  It finds any functions that are
 // too long or have too many parameters or results.
-package main // import "stathat.com/c/splint"
+package main
 
 import (
 	"encoding/json"

@@ -1,5 +1,9 @@
-splint
-======
+# splint
+
+[![Build Status](https://travis-ci.org/agflow/splint.svg?branch=master)](https://travis-ci.org/agflow/splint)
+[![GoDoc](https://godoc.org/github.com/agflow/splint?status.svg)](https://godoc.org/github.com/agflow/splint)
+[![Go Report](https://goreportcard.com/badge/github.com/agflow/splint)](https://goreportcard.com/report/github.com/agflow/splint)
+[![Coverage](https://codecov.io/gh/agflow/splint/branch/master/graph/badge.svg)](https://codecov.io/gh/agflow/splint)
 
 `splint` is a little Go application to analyze Go source files.  It finds any functions that are
 too long or have too many parameters or results.
@@ -9,24 +13,12 @@ for detecting potential problem areas in our code, areas that should be refactor
 functions and functions with long parameter/result lists when they are needed, but generally try to
 keep them short.
 
-Installation
-------------
+## Installation
 
 Use `go install`:
 
-    go install stathat.com/c/splint
+    go install github.com/agflow/splint
 
-Usage
------
+## About
 
-Examples available at [www.stathat.com/c/splint](http://www.stathat.com/c/splint).
-
-Contact us
-----------
-
-We'd love to hear from you if you are using `splint`!  We're on twitter: [@stat_hat](http://twitter.com/stat_hat) or [contact us here](http://www.stathat.com/docs/contact).
-
-About
------
-
-Written by Patrick Crosby at [StatHat](http://www.stathat.com).  Twitter:  [@stathat](http://twitter.com/stathat)
+This is a fork of [splint](https://github.com/stathat/splint).
