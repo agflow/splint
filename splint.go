@@ -1,5 +1,12 @@
 // splint is a little Go application to analyze Go source files.  It finds any functions that are
 // too long or have too many parameters or results.
+//
+// find . -name "*.go" -exec splint {} \;
+// By default, splint will inform you of any functions that are more than 30 statements long, have more than five parameters, or have more than five results.
+//
+// You can change these values with command line flags. -s sets the statement count threshold, -p sets the parameter count threshold, and -r sets the result count threshold.
+// Check for all functions with more than 50 statements, 10 parameters, 7 results:
+// splint -s=50 -p=10 -r=7 **/*.go
 package main
 
 import (
