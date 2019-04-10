@@ -83,6 +83,7 @@ type Summary struct {
 	NumLongIfs                 int
 }
 
+// IsClean checks if there are some issues to be reported
 func (s *Summary) IsClean() bool {
 	base := len(s.Statement) == 0 && len(s.Param) == 0 && len(s.Result) == 0 && len(s.EmptyIfs) == 0 && len(s.IfChains) == 0 && len(s.LongIfs) == 0
 	if *skipBoolParamCheck {
